@@ -1,16 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
-const App:React.FC = () => {
+
+function App(){
   return(
-    <Router>
-      <switch>
-          <Route>
-            
-          </Route>
-      </switch>
-    </Router>
+    <div className='App'>
+        <Routes>
+            <Route path="/" element={<HomePage/>}></Route>
+        </Routes>
+    </div>
   );
-};
+}
 
 export default App;
