@@ -1,8 +1,47 @@
-body{
-    margin:0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #f0f0f0;
+:root {
+    /* COLORS */
+    --primary-color: #2C3E50;  /* charcoal */
+    --secondary-color: #2980B9; /* steel blue */
+    --accent-color: #C0392B; /* persian red */
+    --neutral1-color: #ECF0F1; /* antiflash white */
+    --neutral2-color: #BDC3C7; /* french gray */
+
+    /* TYPOGRAPHY */
+    --primary-font-color: #2C3E50; /* Oswald */
+    --primary-font: 'Oswald', sans-serif;
+
+    --secondary-font-color: #BDC3C7; /* softer gray */
+    --secondary-font: 'Merriweather', serif;
+
+    --accent-font-color: #C0392B;
+    --accent-font: 'Source Sans Pro', sans-serif;
+
+     /* FONT SIZES */
+     --font-size-small: 1; /* 14px */
+     --font-size-medium: 1.25rem;    
+     --font-size-large: 1.5rem;  
+     --font-size-xlarge: 2rem;  
+ 
+     /* BUTTON SIZES */
+     --button-padding: 0.75rem 1.5rem; /* Padding for buttons */
+     --button-border-radius: 5px;
 }
-h1{
-    color: #333;
+
+/* Global Styles */
+body {
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+}
+
+button, small {
+    font-family: var(--accent-font);
+    color: var(--accent-font-color);
+    font-size: var(--font-size-medium);
+    padding: var(--button-padding);
+
 }

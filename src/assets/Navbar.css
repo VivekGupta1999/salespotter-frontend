@@ -1,0 +1,92 @@
+/* css for navbar */ 
+
+.navbar{
+    background-color: var(--neutral1-color);
+
+}
+
+ .brand-name , .navbar-brand:visited{
+    color:var(--accent-color);
+    font-size:var(--font-size-large);
+} 
+
+
+
+
+.nav-link{
+
+    font-family: var(--accent-font);
+    color:var(--secondary-color);
+    font-size:var(--font-size-small);
+
+}
+
+
+.nav-link:hover {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+
+
+.active-link{
+    color:var(--accent-color) !important;
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+ .navbar{
+    display:flex;
+    background-color:var(--nuetral2-color); 
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 20px;
+    font-family: var(--accent-font);
+    color:var(--secondary-color);
+    font-size:var(--font-size-medium);
+}
+
+.nav-link{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--accent-font);
+    color:var(--secondary-color);
+    font-size:var(--font-size-medium);
+    
+
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent-color);
+}
+
+.navbar-brand {
+    color:var(--accent-color);
+    font-size: var(--font-size-xlarge);
+    
+}
+.navbar-brand:visited{
+    color:var(--accent-color);
+}
+
+
+.active-link{
+    color:var(--accent-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+    
+} */
