@@ -1,7 +1,9 @@
 :root {
     /* COLORS */
-    --primary-color: #2C3E50;  /* charcoal */
+    --primary-color: #354b60;  /* charcoal */
+    --primary-hover-color:#1a2937;
     --secondary-color: #2980B9; /* steel blue */
+    --secondary-hover-color:#1f5e88;
     --accent-color: #C0392B; /* persian red */
     --neutral1-color: #ECF0F1; /* antiflash white */
     --neutral2-color: #BDC3C7; /* french gray */
@@ -10,16 +12,18 @@
     --primary-font-color: #2C3E50; /* Oswald */
     --primary-font: 'Oswald', sans-serif;
 
-    --secondary-font-color: #BDC3C7; /* softer gray */
+
+    --secondary-font-color: #ebeff3; /* softer gray */
     --secondary-font: 'Merriweather', serif;
+
 
     --accent-font-color: #C0392B;
     --accent-font: 'Source Sans Pro', sans-serif;
 
      /* FONT SIZES */
-     --font-size-small: 1; /* 14px */
-     --font-size-medium: 1.25rem;    
-     --font-size-large: 1.5rem;  
+     --font-size-small: 1rem; /* 14px */
+     --font-size-medium: 1.3rem;    
+     --font-size-large: 1.6rem;  
      --font-size-xlarge: 2rem;  
  
      /* BUTTON SIZES */
@@ -38,10 +42,3 @@ h1, h2, h3 {
     color: var(--primary-font-color);
 }
 
-button, small {
-    font-family: var(--accent-font);
-    color: var(--accent-font-color);
-    font-size: var(--font-size-medium);
-    padding: var(--button-padding);
-
-}

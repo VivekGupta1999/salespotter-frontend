@@ -7,7 +7,8 @@
 
  .brand-name , .navbar-brand:visited{
     color:var(--accent-color);
-    font-size:var(--font-size-large);
+    font-size:var(--font-size-xlarge);
+    font-weight: bold;
 } 
 
 
@@ -36,12 +37,28 @@
     
 }
 
+.nav-or-text{
+    font-family: var(--accent-font);
+    color:var(--accent-color);
+    font-size:var(--font-size-small);
+    /* display: inline-block;
+    vertical-align: middle;
+    list-style: 1.5; */
+
+}
 
 
 
+#nav-dropdown{
+    font-weight: bold;
+
+}
 
 
-
+#nav-dropdown:hover{
+    color: var(--accent-color);
+    font-weight: bold;
+}   
 
 
 
