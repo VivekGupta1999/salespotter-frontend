@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "../assets/Navbar.css";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,9 +6,19 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import {useAuth} from '../context/AuthContext';
 import  Button  from "./Button";
+import { Navigate } from "react-router-dom";
 const NavBar = () => {
     const {user, logout} = useAuth();
     // const user ='vivek';
+    const navigate = useNavigate();
+
+    const handlePostAdClick= () =>{
+        if(user){
+                navigate('/post-ad');
+        }else{
+                navigate('/login');
+        }
+    };
     return(
         <>
             <Navbar>
@@ -52,7 +62,7 @@ const NavBar = () => {
              
                         
                     <Nav.Item>
-                         <Button  className="button-primary" onClick={() => console.log("Button Clicked")}>Post Ad</Button>
+                         <Button  className="button-primary" onClick={handlePostAdClick}>Post Ad</Button>
                     </Nav.Item>
                         
                     </Nav>
@@ -66,33 +76,7 @@ const NavBar = () => {
     );
 }
 
-// const Navbar =() =>{
-//     return(
 
-//         <nav className="navbar navbar-expand-lg">
-//                 <NavLink className="navbar-brand" to="/">SaleSpotter</NavLink>
-//                     <ul className="navbar-nav">
-//                         <li className="nav-item">
-//                             <NavLink  to="/" className={({isActive})=>`nav-link ${isActive? "active-link":""}`} >Home</NavLink>
-//                         </li>
-//                         <li className="nav-item">
-//                             <NavLink  to="/ads-list" className={({isActive})=> `nav-link ${isActive? "active-link":""}`}>Ads</NavLink>
-//                         </li>
-//                         <li className="nav-item">
-//                             <NavLink to="/post-ad" className={({isActive})=> `nav-link ${isActive? "active-link":""}`}>Post Ad</NavLink>
-//                         </li>
-//                         <li className="nav-item">
-//                             <NavLink  to="/about-us" className={({isActive})=>`nav-link ${isActive?"active-link":""}`}>About Us</NavLink>
-//                         </li>
-//                         <li className="nav-item">
-//                             <NavLink  to="/contact-us" className={({isActive})=> `nav-link ${isActive? "active-link":""}`}>Contact Us</NavLink>
-//                         </li>
-                        
-//                     </ul>
-//         </nav>
-     
-//     );
-// }
 
 
 export default NavBar;
