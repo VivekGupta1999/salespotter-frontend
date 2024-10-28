@@ -1,18 +1,16 @@
 /* css for navbar */ 
 
+
+/* mobile first approach */
 .navbar{
-    background-color: var(--neutral1-color);
+    background-color: var(--neutral2-color);
 
 }
-
- .brand-name , .navbar-brand:visited{
+.brand-name , .navbar-brand:visited{
     color:var(--accent-color);
     font-size:var(--font-size-xlarge);
     font-weight: bold;
 } 
-
-
-
 
 .nav-link{
 
@@ -22,38 +20,28 @@
 
 }
 
-
 .nav-link:hover {
     color: var(--accent-color);
     font-weight: bold;
 }
 
-
-
 .active-link{
     color:var(--accent-color) !important;
     font-weight: bold;
-    border-bottom: 2px solid var(--accent-color);
-    
+    border-bottom: .2rem solid var(--accent-color);
+    width: auto;
 }
 
 .nav-or-text{
     font-family: var(--accent-font);
     color:var(--accent-color);
     font-size:var(--font-size-small);
-    /* display: inline-block;
-    vertical-align: middle;
-    list-style: 1.5; */
 
 }
-
-
-
 #nav-dropdown{
     font-weight: bold;
 
 }
-
 
 #nav-dropdown:hover{
     color: var(--accent-color);
@@ -62,48 +50,15 @@
 
 
 
-/* 
- .navbar{
-    display:flex;
-    background-color:var(--nuetral2-color); 
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-between;
-    padding:10px 20px;
-    font-family: var(--accent-font);
-    color:var(--secondary-color);
-    font-size:var(--font-size-medium);
-}
-
-.nav-link{
-
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-family: var(--accent-font);
-    color:var(--secondary-color);
-    font-size:var(--font-size-medium);
-    
-
-}
-
-.navbar .nav-link:hover {
-    color: var(--accent-color);
-}
-
-.navbar-brand {
-    color:var(--accent-color);
-    font-size: var(--font-size-xlarge);
-    
-}
-.navbar-brand:visited{
-    color:var(--accent-color);
-}
+/*  
+large size
 
 
-.active-link{
-    color:var(--accent-color);
-    font-weight: bold;
-    border-bottom: 2px solid var(--accent-color);
-    
-} */
+
+
+
+
+
+
+
+ */

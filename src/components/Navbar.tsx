@@ -1,12 +1,8 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "../assets/Navbar.css";
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import {useAuth} from '../context/AuthContext';
 import  Button  from "./Button";
-import { Navigate } from "react-router-dom";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 const NavBar = () => {
     const {user, logout} = useAuth();
     // const user ='vivek';
@@ -21,9 +17,11 @@ const NavBar = () => {
     };
     return(
         <>
-            <Navbar>
+            <Navbar expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="/" className="brand-name">SaleSpotter</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav ms-auto"/>
+                    <Navbar.Collapse>
                     <Nav  className="me-auto">
                         <Nav.Item>
                          <NavLink className={({isActive})=> `nav-link ${isActive ? 'active-link':''}`} to="/">Home</NavLink>
@@ -37,10 +35,8 @@ const NavBar = () => {
                         <Nav.Item>
                          <NavLink className={({isActive})=> `nav-link ${isActive ? 'active-link':''}`} to="/contact-us">Contact Us</NavLink>
                         </Nav.Item>
-                    </Nav>{
-                    /* Right Aligned section */}
-                    <Nav className ="ms-auto d-flex align-items-center">
-                        {user ? (
+                    </Nav>
+                    {user ? (
                               <Nav.Item className="me-3">
                                     <NavDropdown title={user.toUpperCase()} id="nav-dropdown">
                                         <NavDropdown.Divider />
@@ -49,25 +45,20 @@ const NavBar = () => {
                                     </NavDropdown>
                                 </Nav.Item>
                             ):(
-                            <>
+                            <Nav className="d-flex">
                                  <Nav.Item>
                                  <NavLink className={({isActive})=> `nav-link ${isActive ? 'active-link':''}`} to="/register">Register</NavLink>
-                                    </Nav.Item>
-                                 <span className=" nav-or-text">or</span>
-                                 <Nav.Item>
-                                    <NavLink className={({isActive})=> `nav-link  me-3 ${isActive ? 'active-link':''}`} to="/login">Login</NavLink>
                                 </Nav.Item>
-                            </>
+                                <Nav.Item className="nav-or-text d-none d-lg-inline-flex align-items-center">
+                                    <span >or</span>
+                                </Nav.Item>
+                                 <Nav.Item>
+                                    <NavLink className={({isActive})=> `nav-link  ${isActive ? 'active-link':''}`} to="/login">Sign In</NavLink>
+                                </Nav.Item>
+                                </Nav>
                             )}
-             
-                        
-                    <Nav.Item>
-                         <Button  className="button-primary" onClick={handlePostAdClick}>Post Ad</Button>
-                    </Nav.Item>
-                        
-                    </Nav>
-               
-                        
+                    <Button  className="button-primary" onClick={handlePostAdClick}>Post Ad</Button>
+                    </Navbar.Collapse>                     
                   
                 </Container>
 

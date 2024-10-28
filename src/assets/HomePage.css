@@ -1,0 +1,11 @@
+.hero-header-section{
+    background-color: var(--neutral1-color);
+    color: var(--primary-font-color);
+}
+
+.main-text{
+    font-size: var(--font-size-medium);
+}
+.buttons-row{
+    padding:auto;
+}
