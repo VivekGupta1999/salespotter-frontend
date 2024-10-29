@@ -9,3 +9,13 @@
 .buttons-row{
     padding:auto;
 }
+
+.benefits-section{
+    background-color: var(--neutral2-color);
+    color: var(--primary-font-color);
+    font-size: var(--font-size-small);
+}
+
+.benefits-section-image{
+    background-color: orange;
+}
