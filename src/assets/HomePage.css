@@ -19,3 +19,14 @@
 .benefits-section-image{
     background-color: orange;
 }
+
+.benefits-section-headings{
+    font-size: var(--font-size-medium);
+    text-align: center;
+}
+
+.feature-section{
+    background-color: var(--neutral1-color);
+    color: var(--primary-font-color);
+}
+
