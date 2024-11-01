@@ -10,6 +10,7 @@ import RegisterPage from "./pages/RegisterPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import { AuthProvider } from "./context/AuthContext";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 function App(){
   return(
     <AuthProvider>
@@ -24,6 +25,7 @@ function App(){
             <Route path="/post-ad" element={<PostAdPage/>} />
             <Route path="/about-us" element={<AboutUsPage/>}/>
             <Route path="/contact-us" element={<ContactUsPage/>}/>
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage/>}/>
           </Routes>
         </Layout>
       </Router>

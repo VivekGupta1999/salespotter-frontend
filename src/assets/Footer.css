@@ -3,3 +3,24 @@
     color: var(--primary-font-color);
     font-size: var(--font-size-small);
 }
+
+.my-brand, .my-brand:visited{
+        color:var(--accent-color);
+        font-size:var(--font-size-large);
+        font-weight: bold;
+        text-decoration: none;
+}
+
+.company-tag{
+    font-size: var(--font-size-medium);
+    color:var(--primary-font-color);
+}
+
+.page-links, .page-links:visited{
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    color:var(--primary-font-color);
+    text-decoration: none;
+}
+
+
