@@ -6,7 +6,7 @@
 
 .my-brand, .my-brand:visited{
         color:var(--accent-color);
-        font-size:var(--font-size-large);
+        font-size:var(--font-size-medium);
         font-weight: bold;
         text-decoration: none;
 }
