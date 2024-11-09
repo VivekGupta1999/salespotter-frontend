@@ -1,10 +1,11 @@
 import React from 'react';
-
+import AdsFilter from '../components/AdsFilter';
 
 const AdsListPage = () =>{
+    
     return(
         <div>
-            <h1>Ads List Page</h1>
+            <AdsFilter/>
         </div>
     );
 };

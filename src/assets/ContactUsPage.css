@@ -1,0 +1,17 @@
+.hero-header-section-headline{
+    font-size:var(--font-size-xlarge);
+}
+
+.contact-section{
+    background-color: var(--neutral2-color);
+   
+}
+.contact-form{
+    color: var(--primary-font-color);
+    background-color:var(--neutral1-color);
+ 
+}
+.headings-text{
+    color: var(--primary-font-color);
+    font-size:var(--font-size-medium);
+}

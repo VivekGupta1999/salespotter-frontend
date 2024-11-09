@@ -1,0 +1,33 @@
+.hero-header-section, .vision-section, .thanks-section{
+    background-color: var(--neutral1-color);
+    color: var(--primary-font-color);
+    font-family: var(--primary-font);
+}
+
+.main-text{
+    font-size: var(--font-size-medium);
+    font-family: var(--primary-font);
+}
+
+.main-text-heading{
+    font-size: var(--font-size-large);
+    font-family: var(--secondary-font);
+}
+
+.feature-section-headings{
+    font-weight: bold;
+    font-size: var(--font-size-medium);
+}
+
+.feature-section, .feedback-section{
+    background-color: var(--neutral2-color);
+    color: var(--primary-font-color);
+}
+
+.feature-section-text{
+    font-size: var(--font-size-small);
+    font-family: var(--primary-font);
+}
+
+
+
