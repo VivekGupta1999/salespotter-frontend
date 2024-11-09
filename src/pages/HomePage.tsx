@@ -58,7 +58,7 @@ const HomePage = () =>{
                 
         </Container>
 
-        <Container fluid className="feature-section p-3">
+        <Container fluid className="features-section p-3">
             <Row className="main-text justify-content-center p-2">Find Local Garage Sales With Ease</Row>
             <Row className="main-text justify-content-center p-2">Our Platform allows you to easily Post Ads for Sale and Notifies our users of New Ads in there area.</Row>
             <Row className="p-2">
