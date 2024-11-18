@@ -34,7 +34,7 @@
 /* Global Styles */
 body {
     font-family: var(--secondary-font);
-    color: var(--secondary-font-color);
+    color: var(--primary-font-color);
 }
 
 h1, h2, h3 {

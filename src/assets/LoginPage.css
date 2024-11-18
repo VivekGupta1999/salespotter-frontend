@@ -1,0 +1,19 @@
+.left-column{
+    background-color: var(--neutral1-color);
+    color: var( --primary-font-color);
+}
+
+.right-column{
+    background-color: var(--neutral2-color);
+    color: var(--font-color-primary);
+}
+
+.headings-text{
+    color: var(--accent-color);
+    font-size:var(--font-size-large);
+}
+
+.main-text{
+    color: var( --primary-font-color);
+    font-size: var(--font-size-xlarge);
+}

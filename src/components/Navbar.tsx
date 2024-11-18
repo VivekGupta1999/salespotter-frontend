@@ -57,7 +57,7 @@ const NavBar = () => {
                                 </Nav.Item>
                                 </Nav>
                             )}
-                    <Button  className="button-primary" onClick={handlePostAdClick}>Post Ad</Button>
+                    <Button  className="button-primary m-lg-2" onClick={handlePostAdClick}>Post Ad</Button>
                     </Navbar.Collapse>                     
                   
                 </Container>
